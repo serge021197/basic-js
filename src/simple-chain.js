@@ -27,7 +27,7 @@ const chainMaker = {
   finishChain() {
     let finish = this.chain.join('~~');
     this.chain = [];
-    return finish
+    return finish;
   }
 }
 module.exports = chainMaker;
