@@ -7,16 +7,16 @@ module.exports = function repeater(str, options) {
         additionSeparator
     } = options;
     if (!separator) {
-        separator = '+'
+        separator = '+';
     };
     if (!additionSeparator) {
-        additionSeparator = '|'
+        additionSeparator = '|';
     };
     if (typeof (str) != 'string') {
-        str = str + ''
+        str = str + '';
     };
     if (typeof addition == 'undefined') {
-        addition = ''
+        addition = '';
     }
     let add = addition;
     if (additionRepeatTimes) {
@@ -32,5 +32,5 @@ module.exports = function repeater(str, options) {
             str += separator + str1;
         }
     }
-    return str
+    return str;
 }
